@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h1>ToDo Website Home</h1>
+
+<p>Welcome to <em>ToDo Website</em>, django application that provides you an opportunity to write down your tasks.
+</p>
+
+<h2>Current statistics:</h2>
+<ul>
+    <li><strong>Initial tasks:</strong> {{ num_initial_tasks }}</li>
+    <li><strong>Pending tasks:</strong> {{ num_pending_tasks }}</li>
+    <li><strong>Resolved tasks:</strong> {{ num_resolved_tasks }}</li>
+    <li><strong>Tasks submitted:</strong> {{ num_tasks }}</li>
+
+</ul>
+
+{% endblock %}
